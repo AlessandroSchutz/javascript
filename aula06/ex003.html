@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgba(96, 229, 247, 0.342);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: blueviolet;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+    /*
+    Para passar de string para n° pode ser usado só o "Number" que o proprio JS irá decidir se é n° inteiro ou quebrado  Para n° inteiro pode ser usado "parseInt" 
+    Para n° quebrado pode ser usado "parseFloat"
+    Para converter um n° para string basta utilizar "String(s)"
+    Para copiar n° com 2 casas decimais utilizamos "toFixed(2)"
+    Para copiar n° com a formatação de 'R$' utilizamos "toLocaleString('pt-BR',{style:'currency', currency:'BRL'})"
+    */
+       var n1 = Number(window.prompt('Digite um número:'))
+       var n2 = Number(window.prompt('Digite outro número:')) 
+       var s = n1 + n2
+       window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>
